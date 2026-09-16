@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Malaazi - Premium hospitality and lifestyle brand for luxury stays and experiences.">
+    <title>Contact Malaazi | Get in Touch</title>
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .contact-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--spacing-xxl);
+            padding: var(--spacing-xxl) 0;
+        }
+        .contact-info { max-width: 400px; }
+        .contact-info-item {
+            display: flex;
+            gap: var(--spacing-lg);
+            margin-bottom: var(--spacing-xl);
+        }
+        .contact-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--primary-dark);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary-gold);
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-md);
+        }
+        .form-group {
+            display: flex;
+            gap: var(--spacing-md);
+        }
+        .form-group input {
+            flex: 1;
+        }
+        .form-input {
+            padding: var(--spacing-md);
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            font-family: var(--font-sans);
+            font-size: 1rem;
+        }
+        .form-input:focus {
+            outline: none;
+            border-color: var(--primary-gold);
+            box-shadow: 0 0 0 3px rgba(200, 153, 104, 0.1);
+        }
+        .form-select {
+            padding: var(--spacing-md);
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            background: #fff;
+            cursor: pointer;
+        }
+        textarea.form-input {
+            resize: vertical;
+            min-height: 150px;
+        }
+        .form-submit {
+            background: var(--primary-dark);
+            color: var(--primary-gold);
+            border: 2px solid var(--primary-dark);
+            padding: var(--spacing-md) var(--spacing-lg);
+            font-size: 1rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        .form-submit:hover {
+            background: var(--primary-gold);
+            color: var(--primary-dark);
+        }
+        .privacy-notice {
+            font-size: 0.85rem;
+            color: var(--text-light);
+            text-align: center;
+            margin-top: var(--spacing-md);
+        }
+        .other-ways {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: var(--spacing-lg);
+            text-align: center;
+            padding: var(--spacing-xxl) 0;
+            border-top: 1px solid var(--border-color);
+            margin-top: var(--spacing-xxl);
+        }
+        .other-way-item {
+            padding: var(--spacing-lg);
+        }
+        .other-way-icon {
+            font-size: 2.5rem;
+            color: var(--primary-gold);
+            margin-bottom: var(--spacing-md);
+        }
+        .other-way-item h4 {
+            color: var(--primary-gold);
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            margin-bottom: var(--spacing-md);
+        }
+        .other-way-item p {
+            font-size: 0.9rem;
+            color: var(--text-light);
+        }
+        .other-way-item a {
+            color: var(--primary-gold);
+            text-decoration: none;
+        }
+        @media (max-width: 1024px) {
+            .contact-wrapper {
+                grid-template-columns: 1fr;
+            }
+            .other-ways {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 768px) {
+            .form-group {
+                flex-direction: column;
+            }
+            .other-ways {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <div class="logo-icon">☀</div>
+                    <div class="logo-text">
+                        <h1>MALAAZI</h1>
+                        <p>Because You Matter</p>
+                    </div>
+                </div>
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="collection.html">COLLECTION</a></li>
+                    <li><a href="signature.html">SIGNATURE</a></li>
+                    <li><a href="executive-gatherings.html">EXECUTIVE GATHERINGS</a></li>
+                    <li><a href="discover.html">DISCOVER</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="#book" class="btn-book">BOOK NOW</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=1200&h=600&fit=crop') center/cover;">
+        <div class="container">
+            <div class="hero-content">
+                <h2 class="hero-title">Contact Malaazi</h2>
+                <p class="hero-label">WE'RE HERE FOR YOU</p>
+                <p class="hero-subtitle">Whether you're planning a stay, exploring partnership opportunities or have a question, our team will be happy to assist you.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section style="padding: var(--spacing-xxl) 0; background: #fff;">
+        <div class="container">
+            <div class="contact-wrapper">
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h3 style="font-family: var(--font-serif); font-size: 1.8rem; margin-bottom: var(--spacing-xl); color: var(--text-dark);">GET IN TOUCH</h3>
+                    
+                    <div class="contact-info-item">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div>
+                            <h4 style="font-weight: 600; margin-bottom: var(--spacing-sm);">OUR OFFICES</h4>
+                            <p style="color: var(--text-light);">Watamu, Kilifi County<br>Kenyan Coast, Kenya</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                        <div>
+                            <h4 style="font-weight: 600; margin-bottom: var(--spacing-sm);">PHONE</h4>
+                            <p style="color: var(--text-light);">
+                                <a href="tel:+254700000000" style="color: var(--text-light); text-decoration: none;">+254 700 000 000</a><br>
+                                <a href="tel:+254111000000" style="color: var(--text-light); text-decoration: none;">+254 111 000 000</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <h4 style="font-weight: 600; margin-bottom: var(--spacing-sm);">EMAIL</h4>
+                            <p style="color: var(--text-light);">
+                                <a href="mailto:hello@malaazi.com" style="color: var(--text-light); text-decoration: none;">hello@malaazi.com</a><br>
+                                <a href="mailto:partnerships@malaazi.com" style="color: var(--text-light); text-decoration: none;">partnerships@malaazi.com</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <div class="contact-icon"><i class="fas fa-clock"></i></div>
+                        <div>
+                            <h4 style="font-weight: 600; margin-bottom: var(--spacing-sm);">HOURS</h4>
+                            <p style="color: var(--text-light);">
+                                Monday – Friday: 8:00am – 6:00pm<br>
+                                Saturday: 9:00am – 2:00pm<br>
+                                Sunday: By Appointment
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <div class="contact-icon"><i class="fas fa-globe"></i></div>
+                        <div>
+                            <h4 style="font-weight: 600; margin-bottom: var(--spacing-sm);">WEBSITE</h4>
+                            <p style="color: var(--text-light);">
+                                <a href="https://www.malaazi.com" style="color: var(--text-light); text-decoration: none;">www.malaazi.com</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div>
+                    <h3 style="font-family: var(--font-serif); font-size: 1.8rem; margin-bottom: var(--spacing-lg); color: var(--text-dark);">SEND US A MESSAGE</h3>
+                    <p style="color: var(--text-light); margin-bottom: var(--spacing-xl);">Fill in the form below and a member of our team will get back to you as soon as possible.</p>
+                    
+                    <form name="contact" class="contact-form">
+                        <div class="form-group">
+                            <input type="text" name="fullName" placeholder="Full Name" class="form-input" required>
+                            <input type="email" name="email" placeholder="Email Address" class="form-input" required>
+                        </div>
+                        
+                        <input type="tel" name="phone" placeholder="Phone Number" class="form-input" required>
+                        
+                        <select name="inquiry" class="form-input form-select" required>
+                            <option value="">I'm reaching out about...</option>
+                            <option value="booking">Booking & Reservations</option>
+                            <option value="partnership">Partnership Opportunity</option>
+                            <option value="event">Event Inquiry</option>
+                            <option value="general">General Question</option>
+                        </select>
+                        
+                        <textarea name="message" placeholder="Your Message" class="form-input" required></textarea>
+                        
+                        <button type="submit" class="form-submit">SEND MESSAGE →</button>
+                        
+                        <p class="privacy-notice">🔒 Your information is safe with us. We respect your privacy.</p>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Call to Action -->
+            <div style="text-align: center; padding: var(--spacing-xxl) 0;">
+                <h3 style="font-family: var(--font-serif); font-size: 2rem; margin-bottom: var(--spacing-md); color: var(--text-dark);">We look forward to connecting with you and<br>creating meaningful hospitality experiences together.</h3>
+            </div>
+
+            <!-- Other Ways to Connect -->
+            <div class="other-ways">
+                <div class="other-way-item">
+                    <div class="other-way-icon">🏢</div>
+                    <h4>PARTNERSHIPS</h4>
+                    <p>Join our curated collection of properties and trusted hospitality partners</p>
+                    <p style="margin-top: var(--spacing-md);"><a href="mailto:partnerships@malaazi.com">partnerships@malaazi.com</a></p>
+                </div>
+                <div class="other-way-item">
+                    <div class="other-way-icon">🍽️</div>
+                    <h4>RESERVATIONS & STAYS</h4>
+                    <p>For booking assistance or special requests</p>
+                    <p style="margin-top: var(--spacing-md);"><a href="mailto:hello@malaazi.com">hello@malaazi.com</a></p>
+                </div>
+                <div class="other-way-item">
+                    <div class="other-way-icon">💼</div>
+                    <h4>EXECUTIVE GATHERINGS</h4>
+                    <p>Plan your meetings, retreats and exclusive events</p>
+                    <p style="margin-top: var(--spacing-md);"><a href="mailto:events@malaazi.com">events@malaazi.com</a></p>
+                </div>
+                <div class="other-way-item">
+                    <div class="other-way-icon">💬</div>
+                    <h4>GENERAL ENQUIRIES</h4>
+                    <p>We're here to answer your questions</p>
+                    <p style="margin-top: var(--spacing-md);"><a href="mailto:info@malaazi.com">info@malaazi.com</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>MALAAZI</h4>
+                    <p>Exceptional places. Trusted partners. One premium standard.</p>
+                    <p>Because You Matter.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>QUICK LINKS</h4>
+                    <ul>
+                        <li><a href="collection.html">Collection</a></li>
+                        <li><a href="signature.html">Signature</a></li>
+                        <li><a href="discover.html">Discover</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>CONTACT</h4>
+                    <p>Email: hello@malaazi.com</p>
+                    <p>Phone: +254 700 000 000</p>
+                    <p>Watamu, Kilifi County<br>Kenyan Coast, Kenya</p>
+                </div>
+                <div class="footer-section">
+                    <h4>FOLLOW US</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Malaazi. All rights reserved. Because You Matter.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
