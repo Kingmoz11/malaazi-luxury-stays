@@ -1,0 +1,44 @@
+:root {
+    /* Colors */
+    --primary-gold: #C89968;
+    --primary-dark: #1a1a1a;
+    --primary-light: #f5f1ed;
+    --accent-cream: #f9f6f2;
+    --text-dark: #2c2c2c;
+    --text-light: #6b6b6b;
+    --border-color: #e0dbd4;
+    
+    /* Typography */
+    --font-serif: 'Georgia', 'Garamond', serif;
+    --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+    
+    /* Sizes */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 3rem;
+    --spacing-xxl: 4rem;
+    
+    /* Typography Sizes */
+    --font-h1: 3.5rem;
+    --font-h2: 2.5rem;
+    --font-h3: 1.8rem;
+    --font-h4: 1.3rem;
+    --font-body: 1rem;
+    --font-small: 0.875rem;
+    
+    /* Transitions */
+    --transition: all 0.3s ease;
+    --transition-slow: all 0.5s ease;
+}
+
+@media (max-width: 768px) {
+    :root {
+        --font-h1: 2.5rem;
+        --font-h2: 1.8rem;
+        --font-h3: 1.3rem;
+        --font-h4: 1.1rem;
+        --font-body: 0.95rem;
+    }
+}

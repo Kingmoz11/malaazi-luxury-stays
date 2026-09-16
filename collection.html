@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Malaazi's curated collection of luxury properties, villas, and boutique hotels across Kenya's Coast.">
+    <title>Collection - Malaazi | Luxury Stays & Experiences</title>
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <div class="logo-icon">☀</div>
+                    <div class="logo-text">
+                        <h1>MALAAZI</h1>
+                        <p>Because You Matter</p>
+                    </div>
+                </div>
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="collection.html">COLLECTION</a></li>
+                    <li><a href="signature.html">SIGNATURE</a></li>
+                    <li><a href="executive-gatherings.html">EXECUTIVE GATHERINGS</a></li>
+                    <li><a href="discover.html">DISCOVER</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="#book" class="btn-book">BOOK NOW</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1200&h=600&fit=crop') center/cover;">
+        <div class="container">
+            <div class="hero-content">
+                <h2 class="hero-title">Our Collection</h2>
+                <p class="hero-subtitle">Handpicked properties across the Kenyan Coast, each carefully selected to meet our standards of excellence.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collection Categories -->
+    <section style="padding: var(--spacing-xxl) 0; background: #fff;">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: var(--spacing-lg);">
+                <div class="property-card" style="background: url('https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=400&h=300&fit=crop') center/cover; height: 300px; border-radius: 8px; position: relative; overflow: hidden; cursor: pointer; transition: var(--transition);">
+                    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.3); display: flex; align-items: flex-end; padding: var(--spacing-lg);">
+                        <div>
+                            <h3 style="color: #fff; font-family: var(--font-serif); font-size: 1.8rem; margin-bottom: var(--spacing-sm);">BOUTIQUE HOTELS</h3>
+                            <p style="color: rgba(255,255,255,0.9);">Unique hotels with character and charm</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="property-card" style="background: url('https://images.unsplash.com/photo-1618883182384-a83a8e7b9b47?w=400&h=300&fit=crop') center/cover; height: 300px; border-radius: 8px; position: relative; overflow: hidden; cursor: pointer; transition: var(--transition);">
+                    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.3); display: flex; align-items: flex-end; padding: var(--spacing-lg);">
+                        <div>
+                            <h3 style="color: #fff; font-family: var(--font-serif); font-size: 1.8rem; margin-bottom: var(--spacing-sm);">VILLAS</h3>
+                            <p style="color: rgba(255,255,255,0.9);">Private villas for relaxation and luxury</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="property-card" style="background: url('https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400&h=300&fit=crop') center/cover; height: 300px; border-radius: 8px; position: relative; overflow: hidden; cursor: pointer; transition: var(--transition);">
+                    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.3); display: flex; align-items: flex-end; padding: var(--spacing-lg);">
+                        <div>
+                            <h3 style="color: #fff; font-family: var(--font-serif); font-size: 1.8rem; margin-bottom: var(--spacing-sm);">HOLIDAY HOMES</h3>
+                            <p style="color: rgba(255,255,255,0.9);">Feel at home, wherever you are</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="property-card" style="background: url('https://images.unsplash.com/photo-1604080853949-7e792b59934d?w=400&h=300&fit=crop') center/cover; height: 300px; border-radius: 8px; position: relative; overflow: hidden; cursor: pointer; transition: var(--transition);">
+                    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.3); display: flex; align-items: flex-end; padding: var(--spacing-lg);">
+                        <div>
+                            <h3 style="color: #fff; font-family: var(--font-serif); font-size: 1.8rem; margin-bottom: var(--spacing-sm);">APARTMENTS</h3>
+                            <p style="color: rgba(255,255,255,0.9);">Stylish spaces for every kind of stay</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>MALAAZI</h4>
+                    <p>Exceptional places. Trusted partners. One premium standard.</p>
+                    <p>Because You Matter.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>QUICK LINKS</h4>
+                    <ul>
+                        <li><a href="collection.html">Collection</a></li>
+                        <li><a href="signature.html">Signature</a></li>
+                        <li><a href="discover.html">Discover</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>CONTACT</h4>
+                    <p>Email: hello@malaazi.com</p>
+                    <p>Phone: +254 700 000 000</p>
+                    <p>Watamu, Kilifi County<br>Kenyan Coast, Kenya</p>
+                </div>
+                <div class="footer-section">
+                    <h4>FOLLOW US</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Malaazi. All rights reserved. Because You Matter.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
