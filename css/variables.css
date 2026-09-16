@@ -1,17 +1,23 @@
+@import url("brand.css");
+
 :root {
-    /* Colors */
-    --primary-gold: #C89968;
-    --primary-dark: #1a1a1a;
-    --primary-light: #f5f1ed;
-    --accent-cream: #f9f6f2;
-    --text-dark: #2c2c2c;
-    --text-light: #6b6b6b;
-    --border-color: #e0dbd4;
-    
+    /* Malaazi palette sampled and matched to the supplied references */
+    --primary-gold: #c99a4a;
+    --gold-light: #e1bb70;
+    --primary-dark: #031b1a;
+    --deep-green: #06231f;
+    --green-soft: #0d3029;
+    --primary-light: #f1eee8;
+    --accent-cream: #f6f3ee;
+    --surface: #fbf9f5;
+    --text-dark: #17201e;
+    --text-light: #5e625e;
+    --border-color: #ddd8cf;
+
     /* Typography */
-    --font-serif: 'Georgia', 'Garamond', serif;
-    --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
-    
+    --font-serif: 'Cormorant Garamond', 'Iowan Old Style', 'Baskerville', Georgia, serif;
+    --font-sans: 'Montserrat', 'Avenir Next', 'Segoe UI', sans-serif;
+
     /* Sizes */
     --spacing-xs: 0.5rem;
     --spacing-sm: 1rem;
@@ -19,16 +25,15 @@
     --spacing-lg: 2rem;
     --spacing-xl: 3rem;
     --spacing-xxl: 4rem;
-    
+
     /* Typography Sizes */
     --font-h1: 3.5rem;
     --font-h2: 2.5rem;
     --font-h3: 1.8rem;
     --font-h4: 1.3rem;
     --font-body: 1rem;
-    --font-small: 0.875rem;
-    
-    /* Transitions */
+    --font-small: 0.75rem;
+
     --transition: all 0.3s ease;
     --transition-slow: all 0.5s ease;
 }

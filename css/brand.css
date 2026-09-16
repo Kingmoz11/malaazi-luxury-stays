@@ -1,0 +1,130 @@
+/* Shared visual system matching the supplied Malaazi references. */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@400;500;600;700&display=swap');
+
+body {
+    background: var(--accent-cream);
+    font-family: var(--font-sans);
+}
+
+.navbar,
+.footer {
+    background: var(--primary-dark);
+}
+
+.navbar {
+    border-bottom: 1px solid rgba(201, 154, 74, .18);
+}
+
+/* Use the supplied Malaazi mark instead of the placeholder sun/text logo. */
+.logo {
+    width: 145px;
+    height: 76px;
+    display: block;
+    flex: 0 0 145px;
+    background: url('../assets/malaazi-logo.svg') center / contain no-repeat;
+}
+
+.logo-icon,
+.logo-text {
+    display: none;
+}
+
+.nav-menu a {
+    font-size: .72rem;
+    font-weight: 500;
+    letter-spacing: .04em;
+}
+
+.btn-book,
+.btn {
+    background: var(--primary-gold);
+    border-color: var(--primary-gold);
+    color: var(--primary-dark) !important;
+}
+
+.btn-book:hover,
+.btn:hover {
+    background: transparent;
+    color: var(--gold-light) !important;
+}
+
+.hero {
+    background-color: var(--deep-green);
+    min-height: 560px;
+    isolation: isolate;
+}
+
+/* The references use a deep-green-to-transparent cinematic overlay. */
+.hero::before {
+    background: linear-gradient(90deg,
+        rgba(3, 27, 26, .96) 0%,
+        rgba(3, 27, 26, .82) 25%,
+        rgba(3, 27, 26, .48) 52%,
+        rgba(3, 27, 26, .12) 100%);
+    z-index: 0;
+}
+
+.hero-content {
+    max-width: 570px;
+}
+
+.hero-title {
+    font-weight: 400;
+    letter-spacing: -.02em;
+}
+
+.hero-label,
+.section-label,
+.footer-section h4,
+.promise-card h4 {
+    color: var(--primary-gold);
+}
+
+.who-we-are,
+.promise {
+    background: var(--accent-cream);
+}
+
+.principles,
+.cta-section {
+    background: var(--primary-light);
+}
+
+.section-title,
+.promise-text h3,
+.cta-section h3 {
+    font-weight: 400;
+}
+
+.principle-card,
+.promise-card {
+    background: rgba(255, 255, 255, .42);
+    border-color: var(--border-color);
+    border-radius: 2px;
+    box-shadow: none;
+}
+
+.principle-card:hover {
+    box-shadow: 0 12px 30px rgba(3, 27, 26, .08);
+}
+
+.gallery-item {
+    border-radius: 2px;
+}
+
+.cta-section p,
+.promise-text .highlight-text {
+    color: var(--primary-gold);
+}
+
+@media (max-width: 768px) {
+    .logo {
+        width: 125px;
+        height: 64px;
+        flex-basis: 125px;
+    }
+
+    .nav-menu {
+        background: var(--primary-dark);
+    }
+}

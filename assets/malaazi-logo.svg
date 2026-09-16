@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 220" role="img" aria-labelledby="title desc">
+  <title id="title">Malaazi</title>
+  <desc id="desc">Malaazi gold sun emblem and wordmark with the words Because You Matter</desc>
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f0c978"/>
+      <stop offset=".48" stop-color="#c99a4a"/>
+      <stop offset="1" stop-color="#9b6a28"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" stroke="url(#gold)" stroke-width="4" stroke-linecap="round">
+    <circle cx="250" cy="55" r="27" fill="url(#gold)" stroke="none"/>
+    <path d="M250 7v22M250 81v22M202 55h22M276 55h22M216 21l16 16M268 73l16 16M284 21l-16 16M232 73l-16 16"/>
+    <path d="M232 59c8-17 14-17 19-2 7-21 16-19 19-3 7-15 15-12 17 2" stroke="#06231f" stroke-width="7"/>
+  </g>
+  <text x="250" y="145" text-anchor="middle" fill="url(#gold)" font-family="Georgia, serif" font-size="48" letter-spacing="12">MALAAZI</text>
+  <path d="M116 164h268" stroke="url(#gold)" stroke-width="2"/>
+  <text x="250" y="190" text-anchor="middle" fill="#d7ad62" font-family="Georgia, serif" font-size="13" letter-spacing="4">BECAUSE YOU MATTER</text>
+</svg>
